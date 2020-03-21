@@ -1,4 +1,0 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p>This is website.</p>
-
-<!-- AUTO-GENERATED-CONTENT:END -->
