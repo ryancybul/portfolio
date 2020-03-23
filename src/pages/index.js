@@ -7,7 +7,9 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     {/* <SEO title="" /> */}
-     <p class='brb'>¯\_(ツ)_/¯</p>
+    <h1 class="shiny">
+      <span>¯\_(ツ)_/¯</span>
+    </h1>
   </Layout>
 )
 
