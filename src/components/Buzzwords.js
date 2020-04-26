@@ -33,6 +33,7 @@ export default Buzzwords;
 
 const Wrapper = styled.div`
   font-family: 'futura';
+  margin-bottom: 20px;
   text-align: center;
   width: 100%;
 
@@ -64,6 +65,9 @@ const Wrapper = styled.div`
     }
     h3 {
       font-size: 2.25rem;
+    }
+    span {
+      font-size: 1.5rem;
     }
   }
 `;

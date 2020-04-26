@@ -9,7 +9,7 @@ function About() {
       file(relativePath: { regex: "/profile/" }) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
@@ -53,7 +53,7 @@ const Wrapper = styled.div`
       width: 250px;
     }
     p {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
   }
 `;

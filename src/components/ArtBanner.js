@@ -8,7 +8,7 @@ function ArtBanner() {
       file(relativePath: { regex: "/artbanner/" }) {
         childImageSharp {
           fluid(maxWidth: 3500, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
