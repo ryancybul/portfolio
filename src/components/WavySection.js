@@ -9,14 +9,14 @@ function WavySection() {
     query {
       topWave: file(relativePath: { regex: "/waveTop/" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       bottomWave: file(relativePath: { regex: "/waveBottom/" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
