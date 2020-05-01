@@ -4,16 +4,16 @@ import styled from 'styled-components';
 
 const Header = () => (
   <Nav>
-      <Title>
-        <h1 className="title">&lt; RYAN CYBUL &gt;</h1>
-        <h2>/*Web Developer*/</h2>
-      </Title>
+    <Title>
+      <h1 className="title">&lt; RYAN CYBUL &gt;</h1>
+      <h2>/*Web Developer*/</h2>
+    </Title>
     <ul>
       <li>About</li>
       <li>Portfolio</li>
       <li>Thoughts</li>
       <li>Resume</li>
-    </ul> 
+    </ul>
   </Nav>
 );
 
@@ -22,18 +22,17 @@ export default Header;
 const Title = styled.div`
   text-align: center;
   h1 {
-    font-size: 3.5rem;
     font-weight: 500;
     margin: 0px;
   }
   h2 {
-    font-size: 1.5rem;
     font-weight: 500;
+    font-size: 1.5rem;
     margin: 0px;
   }
 `;
+
 const Nav = styled.nav`
-  font-family: 'Futura';
   & ul {
     align-items: center;
     display: flex;

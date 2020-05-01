@@ -1,25 +1,36 @@
 /*Global*/
 :root {
   --bg-color: #C5C5C5;
-  /* --bg-color: #FFFFF; */
   --red: #E34747;
   --navy: #092860;
   --pink: #D17195;
-  --purple: #8300E1;
+  --purple: #821FDD;
   --teal: #C5E6E8;
   --yellow: #ECAE5E;
 }
 
 html {
   font-family: 'Futura', 'Open Sans', sans-serif;
+  font-size: 17px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   background-color: var(--bg-color);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
 }
 
 .wrapper {

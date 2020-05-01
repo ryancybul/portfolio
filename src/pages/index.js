@@ -1,12 +1,21 @@
-import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from 'react';
+import { Link, useStaticQuery, graphql } from 'gatsby';
+
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import ArtBanner from '../components/artBanner';
+import WavySection from '../components/WavySection';
+import About from '../components/About';
+import Buzzwords from '../components/Buzzwords';
 
 const IndexPage = () => (
   <Layout>
-    {<SEO title="" />}
+    <SEO title="Home" />
+    <ArtBanner />
+    <About />
+    <WavySection />
+    <Buzzwords />
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

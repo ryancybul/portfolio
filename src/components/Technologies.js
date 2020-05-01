@@ -10,6 +10,7 @@ const Technologies = () => (
         source: allFile(filter: { absolutePath: { regex: "/devIcons/" } }) {
           edges {
             node {
+              name
               childImageSharp {
                 fluid(maxWidth: 400) {
                   ...GatsbyImageSharpFluid
@@ -22,14 +23,15 @@ const Technologies = () => (
     `}
     render={data => (
       <Container>
-        <h3>Tech I Use</h3>
+        <h2>Tech I Use</h2>
         <div>
-          {data.source.edges.map(({ node }, i) => (
+          {data.source.edges.sort().map(({ node }, i) => (
             <Img
               key={i}
               fluid={node.childImageSharp.fluid}
               fadeIn={false}
               className="image"
+              alt={node.name}
             />
           ))}
         </div>
@@ -43,9 +45,8 @@ export default Technologies;
 const Container = styled.div`
   background-color: var(--purple);
   text-align: center;
-  h3 {
+  h2 {
     color: var(--teal);
-    font-size: 35px;
     margin: 0px;
   }
   div {
@@ -54,15 +55,16 @@ const Container = styled.div`
     justify-content: center;
   }
   .image {
-    width: 125px;
+    width: 100px;
     margin: 20px;
   }
 
   @media only screen and (max-width: 480px) {
-    h3{
-      font-size: 2.25rem;
-    }
     .image {
-      width: 75px;
+      width: 60px;
     }
+  }
+  @media only screen and (max-width: 770px) {
+    background-color: #8300e1;
+  }
 `;

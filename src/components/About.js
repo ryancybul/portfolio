@@ -35,13 +35,14 @@ export default About;
 
 const Wrapper = styled.div`
   align-items: center;
-  text-align: center;
   display: flex;
   flex-direction: column;
+  text-align: center;
+
   p {
-    font-size: 2.25rem;
-    font-family: 'Futura';
-    width: 75%;
+    font-size: 1.5rem;
+    max-width: 1000px;
+    padding-top: 20px;
   }
   .profile {
     width: 480px;
