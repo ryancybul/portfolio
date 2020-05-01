@@ -3,12 +3,29 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import mountainTops from '../images/mountainTops.png';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 function Footer() {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { regex: "/mountainTops/" }) {
+        childImageSharp {
+          fluid(maxWidth: 3080, quality: 100) {
+            ...GatsbyImageSharpFluid_noBase64
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <Wrapper>
-      <img src={mountainTops} alt="mountains" />
+      <Img
+        fluid={data.file.childImageSharp.fluid}
+        fadeIn={false}
+        alt="Mountains"
+      />
       <Content>
         <div>
           <a href="https://github.com/ryancybul" target="blank">

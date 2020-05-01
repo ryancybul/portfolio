@@ -9,14 +9,14 @@ function WavySection() {
     query {
       topWave: file(relativePath: { regex: "/waveTop/" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 3080, quality: 100) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       bottomWave: file(relativePath: { regex: "/waveBottom/" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 3080, quality: 100) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
@@ -43,7 +43,7 @@ function WavySection() {
 
 export default WavySection;
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   img {
     display: block;
     width: 100%;
