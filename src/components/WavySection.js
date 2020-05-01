@@ -26,9 +26,17 @@ function WavySection() {
 
   return (
     <Wrapper>
-      <Img fluid={data.topWave.childImageSharp.fluid} fadeIn={false} alt="Top wave" />
+      <Img
+        fluid={data.topWave.childImageSharp.fluid}
+        fadeIn={false}
+        alt="Top wave"
+      />
       <Technologies />
-      <Img fluid={data.bottomWave.childImageSharp.fluid} fadeIn={false} alt="Bottom wave" />
+      <Img
+        fluid={data.bottomWave.childImageSharp.fluid}
+        fadeIn={false}
+        alt="Bottom wave"
+      />
     </Wrapper>
   );
 }
