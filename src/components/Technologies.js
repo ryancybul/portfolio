@@ -25,7 +25,7 @@ const Technologies = () => (
         <h3>Tech I Use</h3>
         <div>
           {data.source.edges.map(({ node }, i) => (
-            <Img key={i} fluid={node.childImageSharp.fluid} className="image" />
+            <Img key={i} fluid={node.childImageSharp.fluid} fadeIn={false} className="image" />
           ))}
         </div>
       </Container>

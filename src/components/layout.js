@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import './layout.css';
 import ArtBanner from './ArtBanner';
 import Header from './header';
-import Section from './Section';
+import WavySection from './WavySection';
 import Footer from './Footer';
 import About from './About';
 import Buzzwords from './Buzzwords'
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
         <Header />
         <ArtBanner />
         <About />
-        <Section />
+        <WavySection />
         <Buzzwords />
         <Footer />
       </div>
