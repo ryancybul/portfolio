@@ -25,6 +25,7 @@
     "gatsby-plugin-styled-components": "^3.2.1",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-source-wordpress": "^3.3.0",
     "gatsby-transformer-sharp": "^2.4.4",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",

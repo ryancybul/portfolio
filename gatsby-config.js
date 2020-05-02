@@ -31,7 +31,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        // icon: "src/images/my-icon.png", 
+        // icon: "src/images/my-icon.png",
       },
     },
     `gatsby-plugin-sass`,
@@ -40,15 +40,21 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Futura', 'Open Sans']
-        }
-      }
+          families: ['Futura', 'Open Sans'],
+        },
+      },
     },
-    'gatsby-plugin-netlify'
+    {
+      resolve: 'gatsby-source-wordpress',
+      options: 'http://localhost8080',
+      protocol: 'http',
+      hostingWPCOM: false,
+      useACF: true,
+    },
+    'gatsby-plugin-netlify',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  
   ],
   pathPrefix: `/portfolio`,
-}
+};
