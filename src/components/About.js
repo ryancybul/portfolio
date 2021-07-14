@@ -1,7 +1,7 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import styled from 'styled-components';
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import styled from "styled-components";
 
 function About() {
   const data = useStaticQuery(graphql`
@@ -23,7 +23,7 @@ function About() {
         className="profile"
       />
       <p>
-        I am a web developer based out of Asheville, NC. I’m 35 years old and
+        I am a web developer based out of Asheville, NC. I’m 36 years old and
         have been making websites since 2018. I primarily use HTML, CSS and
         JavaScript and focus on the frameworks React.js, Gatsby, and Wordpress.
       </p>
