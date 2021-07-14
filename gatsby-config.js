@@ -8,6 +8,25 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Futura', 'Open Sans'],
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-source-wordpress',
+      options: {
+        baseUrl: 'porftolio.local',
+        protocol: 'http',
+        hostingWPCOM: false,
+        useACF: true,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,27 +53,7 @@ module.exports = {
         // icon: "src/images/my-icon.png",
       },
     },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-styled-components`,
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Futura', 'Open Sans'],
-        },
-      },
-    },
-    {
-      resolve: 'gatsby-source-wordpress',
-      options: 'http://localhost8080',
-      protocol: 'http',
-      hostingWPCOM: false,
-      useACF: true,
-    },
     'gatsby-plugin-netlify',
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
   pathPrefix: `/portfolio`,
 };

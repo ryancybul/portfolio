@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react";
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 function Footer() {
   const data = useStaticQuery(graphql`
@@ -38,7 +38,7 @@ function Footer() {
             <FontAwesomeIcon icon={faLinkedinIn} size="3x" className="icon" />
           </a>
         </div>
-        <p>Ryan Cybul @ 2018 - 2020</p>
+        <p>Ryan Cybul @ 2018 - 2021</p>
       </Content>
     </Wrapper>
   );
