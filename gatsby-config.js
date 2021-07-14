@@ -11,20 +11,11 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Futura', 'Open Sans'],
+          families: ["Futura", "Open Sans"],
         },
-      },
-    },
-    {
-      resolve: 'gatsby-source-wordpress',
-      options: {
-        baseUrl: 'porftolio.local',
-        protocol: 'http',
-        hostingWPCOM: false,
-        useACF: true,
       },
     },
     {
@@ -53,7 +44,7 @@ module.exports = {
         // icon: "src/images/my-icon.png",
       },
     },
-    'gatsby-plugin-netlify',
+    "gatsby-plugin-netlify",
   ],
   pathPrefix: `/portfolio`,
 };
