@@ -38,7 +38,7 @@ function Footer() {
             <FontAwesomeIcon icon={faLinkedinIn} size="3x" className="icon" />
           </a>
         </div>
-        <p>Ryan Cybul @ 2018 - 2021</p>
+        <p>Ryan Cybul @ 2018 - {new Date().getFullYear()}</p>
       </Content>
     </Wrapper>
   );
