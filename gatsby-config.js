@@ -43,7 +43,6 @@ module.exports = {
     //     display: `minimal-ui`,
     //   },
     // },
-    "gatsby-plugin-netlify",
   ],
   pathPrefix: `/portfolio`,
 };
