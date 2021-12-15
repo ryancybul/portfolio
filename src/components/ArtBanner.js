@@ -1,27 +1,25 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-function ArtBanner() {
+const ArtBanner = function () {
   const data = useStaticQuery(graphql`
-    query {
+    {
       file(relativePath: { regex: "/artbanner/" }) {
         childImageSharp {
-          fluid(maxWidth: 3500, quality: 100) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
+          gatsbyImageData(quality: 100, placeholder: NONE, layout: FULL_WIDTH)
         }
       }
     }
   `);
 
   return (
-    <Img
-      fluid={data.file.childImageSharp.fluid}
+    <GatsbyImage
+      image={data.file.childImageSharp.gatsbyImageData}
       durationFadeIn="2000"
       alt="Art banner."
     />
   );
-}
+};
 
 export default ArtBanner;

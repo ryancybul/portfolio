@@ -1,24 +1,20 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import Technologies from './Technologies';
+import React from "react";
+import styled from "styled-components";
+import { useStaticQuery, graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
+import Technologies from "./Technologies";
 
-function WavySection() {
+const WavySection = function () {
   const data = useStaticQuery(graphql`
-    query {
+    {
       topWave: file(relativePath: { regex: "/waveTop/" }) {
         childImageSharp {
-          fluid(maxWidth: 3080, quality: 100) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
+          gatsbyImageData(quality: 100, placeholder: NONE, layout: FULL_WIDTH)
         }
       }
       bottomWave: file(relativePath: { regex: "/waveBottom/" }) {
         childImageSharp {
-          fluid(maxWidth: 3080, quality: 100) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
+          gatsbyImageData(quality: 100, placeholder: NONE, layout: FULL_WIDTH)
         }
       }
     }
@@ -26,20 +22,20 @@ function WavySection() {
 
   return (
     <Wrapper>
-      <Img
-        fluid={data.topWave.childImageSharp.fluid}
+      <GatsbyImage
+        image={data.topWave.childImageSharp.gatsbyImageData}
         fadeIn={false}
         alt="Top wave"
       />
       <Technologies />
-      <Img
-        fluid={data.bottomWave.childImageSharp.fluid}
+      <GatsbyImage
+        image={data.bottomWave.childImageSharp.gatsbyImageData}
         fadeIn={false}
         alt="Bottom wave"
       />
     </Wrapper>
   );
-}
+};
 
 export default WavySection;
 

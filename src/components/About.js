@@ -1,24 +1,22 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
-function About() {
+const About = function () {
   const data = useStaticQuery(graphql`
-    query {
+    {
       file(relativePath: { regex: "/profile/" }) {
         childImageSharp {
-          fluid(maxWidth: 2000, quality: 100) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
+          gatsbyImageData(quality: 100, placeholder: NONE, layout: FULL_WIDTH)
         }
       }
     }
   `);
   return (
     <Wrapper>
-      <Img
-        fluid={data.file.childImageSharp.fluid}
+      <GatsbyImage
+        image={data.file.childImageSharp.gatsbyImageData}
         alt="Profile pic"
         className="profile"
       />
@@ -29,7 +27,7 @@ function About() {
       </p>
     </Wrapper>
   );
-}
+};
 
 export default About;
 
@@ -43,6 +41,7 @@ const Wrapper = styled.div`
     font-size: 1.5rem;
     max-width: 1000px;
     padding-top: 20px;
+    margin: 20px;
   }
   .profile {
     width: 480px;

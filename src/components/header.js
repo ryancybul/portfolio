@@ -1,21 +1,23 @@
 // import { Link } from "gatsby"
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const Header = () => (
-  <Nav>
-    <Title>
-      <h1 className="title">&lt; RYAN CYBUL &gt;</h1>
-      <h2>/*Web Developer*/</h2>
-    </Title>
-    <ul>
-      <li>About</li>
-      <li>Portfolio</li>
-      <li>Thoughts</li>
-      <li>Resume</li>
-    </ul>
-  </Nav>
-);
+const Header = function () {
+  return (
+    <Nav>
+      <Title>
+        <h1 className="title">&lt; RYAN CYBUL &gt;</h1>
+        <h2>/*Web Developer*/</h2>
+      </Title>
+      <ul>
+        <li>About</li>
+        <li>Portfolio</li>
+        <li>Thoughts</li>
+        <li>Resume</li>
+      </ul>
+    </Nav>
+  );
+};
 
 export default Header;
 

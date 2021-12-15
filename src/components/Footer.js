@@ -4,16 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-function Footer() {
+const Footer = function () {
   const data = useStaticQuery(graphql`
-    query {
+    {
       file(relativePath: { regex: "/mountainTops/" }) {
         childImageSharp {
-          fluid(maxWidth: 3080, quality: 100) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
+          gatsbyImageData(quality: 100, placeholder: NONE, layout: FULL_WIDTH)
         }
       }
     }
@@ -21,8 +19,8 @@ function Footer() {
 
   return (
     <Wrapper>
-      <Img
-        fluid={data.file.childImageSharp.fluid}
+      <GatsbyImage
+        image={data.file.childImageSharp.gatsbyImageData}
         fadeIn={false}
         alt="Mountains"
       />
@@ -42,7 +40,7 @@ function Footer() {
       </Content>
     </Wrapper>
   );
-}
+};
 
 export default Footer;
 

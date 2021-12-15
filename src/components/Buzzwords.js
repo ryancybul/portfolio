@@ -1,33 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 
-const Buzzwords = () => {
+const Buzzwords = function () {
   const [words] = useState([
-    'Webophile',
-    'Hiker',
-    'Home brewer',
-    'Juggler',
-    'Cyclist',
-    'Rock climber',
-    'Pizza maker',
-    'Boardgamer',
-    'Former audio engineer',
-    'Generalist',
+    "Generalist",
+    "Webophile",
+    "Hiker",
+    "Home brewer",
+    "Juggler",
+    "Mountain biker",
+    "Rock climber",
+    "Pizza maker",
+    "Boardgamer",
+    "Former audio engineer",
   ]);
 
   return (
     <Wrapper>
       <h3>Buzzwords</h3>
       <div>
-        {words
-          .sort()
-          .map((item, index) =>
-            index % 2 === 0 ? (
-              <span className="odd">{item}</span>
-            ) : (
-              <span className="even">{item}</span>
-            )
-          )}
+        {words.map((item, index) =>
+          index % 2 === 0 ? (
+            <span className="odd">{item}</span>
+          ) : (
+            <span className="even">{item}</span>
+          )
+        )}
       </div>
     </Wrapper>
   );

@@ -1,44 +1,44 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import styled from 'styled-components';
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
+import styled from "styled-components";
 
-const Technologies = () => (
-  <StaticQuery
-    query={graphql`
-      query allimgQuery {
-        source: allFile(filter: { absolutePath: { regex: "/devIcons/" } }) {
-          edges {
-            node {
-              name
-              childImageSharp {
-                fluid(maxWidth: 400) {
-                  ...GatsbyImageSharpFluid
+const Technologies = function () {
+  return (
+    <StaticQuery
+      query={graphql`
+        query allimgQuery {
+          source: allFile(filter: { absolutePath: { regex: "/devIcons/" } }) {
+            edges {
+              node {
+                name
+                childImageSharp {
+                  gatsbyImageData(width: 400, layout: CONSTRAINED)
                 }
               }
             }
           }
         }
-      }
-    `}
-    render={data => (
-      <Container>
-        <h2>Tech I Use</h2>
-        <div>
-          {data.source.edges.sort().map(({ node }, i) => (
-            <Img
-              key={i}
-              fluid={node.childImageSharp.fluid}
-              fadeIn={false}
-              className="image"
-              alt={node.name}
-            />
-          ))}
-        </div>
-      </Container>
-    )}
-  />
-);
+      `}
+      render={(data) => (
+        <Container>
+          <h2>Tech I Use</h2>
+          <div>
+            {data.source.edges.sort().map(({ node }, i) => (
+              <GatsbyImage
+                image={node.childImageSharp.gatsbyImageData}
+                key={i}
+                fadeIn={false}
+                className="image"
+                alt={node.name}
+              />
+            ))}
+          </div>
+        </Container>
+      )}
+    />
+  );
+};
 
 export default Technologies;
 
