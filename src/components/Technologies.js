@@ -13,7 +13,12 @@ const Technologies = function () {
               node {
                 name
                 childImageSharp {
-                  gatsbyImageData(width: 400, layout: CONSTRAINED)
+                  gatsbyImageData(
+                    width: 400
+                    layout: CONSTRAINED
+                    placeholder: NONE
+                    formats: [AUTO, WEBP, AVIF]
+                  )
                 }
               }
             }
@@ -28,7 +33,6 @@ const Technologies = function () {
               <GatsbyImage
                 image={node.childImageSharp.gatsbyImageData}
                 key={i}
-                fadeIn={false}
                 className="image"
                 alt={node.name}
               />
@@ -65,6 +69,6 @@ const Container = styled.div`
     }
   }
   @media only screen and (max-width: 770px) {
-    background-color: #8300e1;
+    background-color: #8301e3;
   }
 `;

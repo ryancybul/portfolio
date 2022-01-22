@@ -21,7 +21,6 @@ const Footer = function () {
     <Wrapper>
       <GatsbyImage
         image={data.file.childImageSharp.gatsbyImageData}
-        fadeIn={false}
         alt="Mountains"
       />
       <Content>
@@ -44,8 +43,11 @@ const Footer = function () {
 
 export default Footer;
 
-const Wrapper = styled.div`
+const Wrapper = styled.footer`
   padding: 0px;
+  position: sticky;
+  top: 100vh;
+  width: 100%;
   img {
     display: block;
     width: 100%;

@@ -7,7 +7,12 @@ const ArtBanner = function () {
     {
       file(relativePath: { regex: "/artbanner/" }) {
         childImageSharp {
-          gatsbyImageData(quality: 100, placeholder: NONE, layout: FULL_WIDTH)
+          gatsbyImageData(
+            quality: 100
+            placeholder: BLURRED
+            layout: FULL_WIDTH
+            formats: [AUTO, WEBP, AVIF]
+          )
         }
       }
     }
@@ -16,7 +21,6 @@ const ArtBanner = function () {
   return (
     <GatsbyImage
       image={data.file.childImageSharp.gatsbyImageData}
-      durationFadeIn="2000"
       alt="Art banner."
     />
   );

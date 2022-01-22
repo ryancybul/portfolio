@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ryan Cybul Web Developer`,
     description: `Web development portfolio for Ryan Cybul`,
-    author: `ryancybul`,
+    author: `Ryan Cybul`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,13 +24,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `devIcons`,
-        path: `${__dirname}/src/images/devIcons`,
       },
     },
   ],

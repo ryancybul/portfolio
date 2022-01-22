@@ -1,19 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './layout.css';
-import Header from './header';
-import Footer from './Footer';
+import React from "react";
+import "../styles/style.css";
+import Nav from "./nav/Nav";
+import Footer from "./Footer";
 
-const Layout = ({ children }) => (
-  <div className="wrapper">
-    <Header />
-    {children}
-    <Footer />
-  </div>
-);
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+const Layout = function ({ children }) {
+  return (
+    <div className="wrapper">
+      <Nav />
+      {children}
+      <Footer />
+    </div>
+  );
 };
 
 export default Layout;

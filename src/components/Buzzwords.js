@@ -21,9 +21,13 @@ const Buzzwords = function () {
       <div>
         {words.map((item, index) =>
           index % 2 === 0 ? (
-            <span className="odd">{item}</span>
+            <span className="odd" key={index}>
+              {item}
+            </span>
           ) : (
-            <span className="even">{item}</span>
+            <span className="even" key={index}>
+              {item}
+            </span>
           )
         )}
       </div>

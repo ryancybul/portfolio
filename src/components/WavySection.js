@@ -24,13 +24,11 @@ const WavySection = function () {
     <Wrapper>
       <GatsbyImage
         image={data.topWave.childImageSharp.gatsbyImageData}
-        fadeIn={false}
         alt="Top wave"
       />
       <Technologies />
       <GatsbyImage
         image={data.bottomWave.childImageSharp.gatsbyImageData}
-        fadeIn={false}
         alt="Bottom wave"
       />
     </Wrapper>

@@ -1,0 +1,66 @@
+/*Global*/
+:root {
+  --bg-color: #c5c5c5;
+  --red: #e34747;
+  --navy: #092860;
+  --pink: #d17195;
+  --purple: #8301e3;
+  --teal: #c5e6e8;
+  --yellow: #ecae5e;
+}
+
+html {
+  font-family: "Futura", "Open Sans", sans-serif;
+  font-size: 17px;
+  overflow-y: scroll;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+.boxShadow {
+  -webkit-box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488,
+    -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff,
+    12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b,
+    -10px -7px 27px 1px #8e5cff, -50px 0px 15px 9px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488,
+    -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff,
+    12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b,
+    -10px -7px 27px 1px #8e5cff, -50px 0px 15px 9px rgba(0, 0, 0, 0);
+}
+
+.hover:hover {
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+  color: var(--pink);
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 2000px;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}

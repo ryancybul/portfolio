@@ -36,7 +36,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-
   p {
     font-size: 1.5rem;
     max-width: 1000px;
