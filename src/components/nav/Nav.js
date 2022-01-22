@@ -4,11 +4,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
 import BurgerMenu from "./BurgerMenu";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const Nav = function () {
   const [open, setOpen] = useState(false);
-  const { width } = useWindowDimensions();
 
   // To do: Set burger menu to close based on window dimensions.
 
