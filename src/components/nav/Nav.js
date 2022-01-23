@@ -79,6 +79,14 @@ const NavWrapper = styled.nav`
       font-size: 2.25rem;
     }
   }
+  @media only screen and (max-width: 400px) {
+    h1 {
+      font-size: 1.65rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
 
   @media only screen and (min-width: 650px) {
     .burgerWrapper {

@@ -1,9 +1,6 @@
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { InfoPageQuery } from "../queries/infoPageQuery";
 
 const Info = function () {

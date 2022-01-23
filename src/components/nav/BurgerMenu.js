@@ -6,6 +6,11 @@ import styled from "styled-components";
 const BurgerMenu = ({ open, setOpen }) => (
   <StyledMenu open={open}>
     <div>
+      <Link className="hover" to="/" onClick={() => setOpen(!open)}>
+        Home
+      </Link>
+    </div>
+    <div>
       <Link className="hover" to="/portfolio/" onClick={() => setOpen(!open)}>
         Portfolio
       </Link>
