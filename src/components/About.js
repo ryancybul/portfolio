@@ -21,9 +21,10 @@ const About = function () {
         className="profile"
       />
       <p>
-        I am a web developer based out of Asheville, NC. I’m 36 years old and
-        have been making websites since 2018. I primarily use HTML, CSS and
-        JavaScript and focus on the frameworks React.js, Gatsby, and Wordpress.
+        I am a web developer based out of Asheville, NC. I’m{" "}
+        {new Date().getFullYear() - new Date(1985)} years old and have been
+        making websites since 2018. I primarily use HTML, CSS and JavaScript and
+        focus on the frameworks React.js, Gatsby, and Wordpress.
       </p>
     </Wrapper>
   );

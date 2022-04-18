@@ -52,7 +52,19 @@ const Info = function () {
               </a>
             </li>
           </ul>
-          <p>(Resume availiable upon request.)</p>
+          <h3>Resume:</h3>
+          <ul>
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1ob1cH2Uquk603_NEdFBgvWxZO2xtSsqiDmUUNng4BtA/edit?usp=sharing"
+                target="blank"
+                className="hover"
+              >
+                Link to resume.
+              </a>
+            </li>
+          </ul>
+          <p>(References availiable upon request.)</p>
         </div>
       </InfoWrapper>
     </PageWrapper>
