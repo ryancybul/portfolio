@@ -36,6 +36,35 @@ const Portfolio = function () {
           built in GatsbyJS, WordPress and is hosted on AWS.
         </p>
       </ProjectWrapper>
+      <ProjectWrapper className="boxShadow">
+        <ProjectImage>
+          <a
+            href="https://629f5242c3dc5a062934ec7c--marvelous-macaron-26e896.netlify.app/"
+            target="blank"
+          >
+            <GatsbyImage
+              image={data.reactClickyGame.childImageSharp.gatsbyImageData}
+              alt="Clicky game"
+            />
+          </a>
+        </ProjectImage>
+        <h2 className="title hover">
+          <a
+            href="https://629f5242c3dc5a062934ec7c--marvelous-macaron-26e896.netlify.app/"
+            target="blank"
+          >
+            Clicky Game
+          </a>
+        </h2>
+        <a
+          href="https://github.com/ryancybul/clicky-game"
+          target="blank"
+          className="githubLink"
+        >
+          <FontAwesomeIcon icon={faGithub} size="3x" className="icon" />
+        </a>
+        <p>This app is a memory game built with React.</p>
+      </ProjectWrapper>
     </PageWrapper>
   );
 };

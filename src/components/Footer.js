@@ -22,6 +22,7 @@ const Footer = function () {
       <GatsbyImage
         image={data.file.childImageSharp.gatsbyImageData}
         alt="Mountains"
+        className="mountains"
       />
       <Content>
         <div>
@@ -51,6 +52,9 @@ const Wrapper = styled.footer`
   img {
     display: block;
     width: 100%;
+  }
+  .mountains {
+    margin-bottom: -5px;
   }
 `;
 const Content = styled.div`

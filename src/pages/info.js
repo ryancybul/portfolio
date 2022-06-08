@@ -16,15 +16,15 @@ const Info = function () {
         <div>
           <h2>Hi, I'm Ryan Cybul</h2>
           <p>
-            I'm a Junior Web Developer and complex problem solver with 3+ years
-            of programming experience. I am seeking to contribute a proven track
+            I'm a Web Developer and complex problem solver with 4+ years of
+            programming experience. I am seeking to contribute a proven track
             record of commitment, team collaboration and creativity in a full
             time web development position. I've always had an interest in
             programming haven taken many elective programming classes in
             highschool and in college. Recently I took my education a step
             further by attending web development bootcamp at Northwestern
             Universty in Chicago. In the bootcamp I've got a good foundation in
-            HTML, CSS, JavaScript, ReactJS and Node.
+            HTML, CSS, JavaScript, React and NodeJS.
           </p>
           <h3>Contact:</h3>
           <ul>

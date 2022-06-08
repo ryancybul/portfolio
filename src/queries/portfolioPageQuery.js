@@ -15,6 +15,18 @@ export const PortfolioPageQuery = () => {
           )
         }
       }
+      reactClickyGame: file(
+        relativePath: { eq: "portfolio/reactclickygame.png" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(
+            quality: 100
+            placeholder: BLURRED
+            layout: CONSTRAINED
+            formats: [AUTO]
+          )
+        }
+      }
     }
   `);
   return portfolioData;
