@@ -16,7 +16,7 @@ const Info = function () {
         <div>
           <h2>Hi, I'm Ryan Cybul</h2>
           <p>
-            I'm a Web Developer and complex problem solver with 4+ years of
+            I'm a Web Developer and complex problem solver with 3+ years of
             programming experience. I am seeking to contribute a proven track
             record of commitment, team collaboration and creativity in a full
             time web development position. I've always had an interest in
