@@ -50,7 +50,7 @@ const Portfolio = function () {
         </ProjectImage>
         <h2 className="title hover">
           <a
-            href="https://629f5242c3dc5a062934ec7c--marvelous-macaron-26e896.netlify.app/"
+            href="https://affectionate-nightingale-ce450f.netlify.app/"
             target="blank"
           >
             MTG Card Search
