@@ -27,6 +27,16 @@ export const PortfolioPageQuery = () => {
           )
         }
       }
+      mtg: file(relativePath: { eq: "portfolio/mtg.png" }) {
+        childImageSharp {
+          gatsbyImageData(
+            quality: 100
+            placeholder: BLURRED
+            layout: CONSTRAINED
+            formats: [AUTO]
+          )
+        }
+      }
     }
   `);
   return portfolioData;

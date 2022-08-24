@@ -39,6 +39,38 @@ const Portfolio = function () {
       <ProjectWrapper className="boxShadow">
         <ProjectImage>
           <a
+            href="https://affectionate-nightingale-ce450f.netlify.app/"
+            target="blank"
+          >
+            <GatsbyImage
+              image={data.mtg.childImageSharp.gatsbyImageData}
+              alt="Magic The Gathering Card Search"
+            />
+          </a>
+        </ProjectImage>
+        <h2 className="title hover">
+          <a
+            href="https://629f5242c3dc5a062934ec7c--marvelous-macaron-26e896.netlify.app/"
+            target="blank"
+          >
+            MTG Card Search
+          </a>
+        </h2>
+        <a
+          href="https://github.com/ryancybul/mtg-deck-builder"
+          target="blank"
+          className="githubLink"
+        >
+          <FontAwesomeIcon icon={faGithub} size="3x" className="icon" />
+        </a>
+        <p>
+          This is a Magic The Gathering card search app that utilizies the
+          Scryfall API and is built with NextJS.
+        </p>
+      </ProjectWrapper>
+      <ProjectWrapper className="boxShadow">
+        <ProjectImage>
+          <a
             href="https://629f5242c3dc5a062934ec7c--marvelous-macaron-26e896.netlify.app/"
             target="blank"
           >
