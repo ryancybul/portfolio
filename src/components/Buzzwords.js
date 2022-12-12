@@ -4,12 +4,11 @@ import styled from "styled-components";
 const Buzzwords = function () {
   const [words] = useState([
     "Generalist",
-    "Webophile",
     "Hiker",
-    "Home brewer",
     "Juggler",
     "Mountain biker",
     "Rock climber",
+    "Drummer",
     "Pizza maker",
     "Boardgamer",
     "Former audio engineer",

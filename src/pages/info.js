@@ -22,9 +22,11 @@ const Info = function () {
             time web development position. I've always had an interest in
             programming haven taken many elective programming classes in
             highschool and in college. Recently I took my education a step
-            further by attending web development bootcamp at Northwestern
-            Universty in Chicago. In the bootcamp I've got a good foundation in
-            HTML, CSS, JavaScript, React and NodeJS.
+            further by attending fullstack web development bootcamp at
+            Northwestern Universty in Chicago. In the bootcamp I've got a good
+            foundation in React, JavaScript, NodeJS, HTML and CSS. Since then
+            I’ve been keeping up with programming by doing freelance work,
+            making side projects, and learning new web technologies.
           </p>
           <h3>Contact:</h3>
           <ul>

@@ -159,7 +159,7 @@ const ProjectImage = styled.div`
   img {
     border-radius: 20px;
   }
-  /* max-width: 575px; */
+
   :hover {
     cursor: pointer;
   }
