@@ -25,7 +25,7 @@ const About = function () {
         {new Date().getFullYear() - new Date(1985)} years old and have been
         programming since 2018. I primarily use React, Typescript, JavaScript,
         Node, CSS, and HTML. I am seeking to contribute a proven track record of
-        commitment, team collaboration and creativity in a full time web
+        commitment, team collaboration, and creativity in a full-time web
         development position.
       </p>
     </Wrapper>

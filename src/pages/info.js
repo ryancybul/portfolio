@@ -18,13 +18,13 @@ const Info = function () {
           <p>
             I'm a Web Developer and complex problem solver with 3+ years of
             programming experience. I am seeking to contribute a proven track
-            record of commitment, team collaboration and creativity in a full
-            time web development position. I've always had an interest in
-            programming haven taken many elective programming classes in
+            record of commitment, team collaboration, and creativity in a
+            full-time web development position. I've always had an interest in
+            programming and have taken many elective programming classes in
             highschool and in college. Recently I took my education a step
-            further by attending fullstack web development bootcamp at
-            Northwestern Universty in Chicago. In the bootcamp I've got a good
-            foundation in React, JavaScript, NodeJS, HTML and CSS. Since then
+            further by attending a full-stack web development bootcamp at
+            Northwestern University in Chicago. In the bootcamp I've got a good
+            foundation in React, JavaScript, NodeJS, HTML, and CSS. Since then
             I’ve been keeping up with programming by doing freelance work,
             making side projects, and learning new web technologies.
           </p>
