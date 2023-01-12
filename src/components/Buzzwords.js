@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from "react";
-import styled from "styled-components";
+import React, { useState } from 'react'
+import styled from 'styled-components'
 
 const Buzzwords = function () {
   const [words] = useState([
-    "Generalist",
-    "Hiker",
-    "Juggler",
-    "Mountain biker",
-    "Rock climber",
-    "Drummer",
-    "Pizza maker",
-    "Boardgamer",
-    "Former audio engineer",
-  ]);
+    'Hiker',
+    'Juggler',
+    'Mountain biker',
+    'Rock climber',
+    'Drummer',
+    'Pizza maker',
+    'Homebrewer',
+    'Boardgamer',
+    'Former audio engineer',
+  ])
 
   return (
     <Wrapper>
@@ -20,21 +20,21 @@ const Buzzwords = function () {
       <div>
         {words.map((item, index) =>
           index % 2 === 0 ? (
-            <span className="odd" key={index}>
+            <span className='odd' key={index}>
               {item}
             </span>
           ) : (
-            <span className="even" key={index}>
+            <span className='even' key={index}>
               {item}
             </span>
           )
         )}
       </div>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Buzzwords;
+export default Buzzwords
 
 const Wrapper = styled.div`
   margin: 20px auto;
@@ -68,4 +68,4 @@ const Wrapper = styled.div`
       font-size: 1.5rem;
     }
   }
-`;
+`
